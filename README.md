@@ -16,10 +16,8 @@
   <a href="#license">License</a>
 </p>
 
-<video controls>
-  <source src="./frontend/static/The-Final-Testination-Video.webm" type="video/webm">
-  Il tuo browser non supporta il formato video.
-</video>
+![Video non supportato](./frontend/static/The-Final-Testination-Video.gif)
+
 
 ## Key Features
 
