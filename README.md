@@ -28,7 +28,6 @@
 - **Hints feature**: Get helpful hints to overcome challenges and progress.
 - **User profile**: Track your completed levels and time spent.
 - **Leaderboard**: Compare your performance with others on the leaderboard.
-Support
 
 ## :smile: How To Use (git e node da cambiare ?)
 
