@@ -54,7 +54,7 @@
 	onMount(() => {
 	// Initialize the Google Sign-In client with the client ID and callback function
 	  google.accounts.id.initialize({
-		client_id: '939341689310-2046ealpuguo21fa6147l5v8l8ombbef.apps.googleusercontent.com', // Google Client ID
+		client_id: 'Insert_Your_Client_ID', // Google Client ID
 		callback: handleCredentialResponse
 	  });
 	   // Render the Google Sign-In button in the div with id 'google-signin-button'

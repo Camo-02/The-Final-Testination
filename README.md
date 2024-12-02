@@ -7,13 +7,14 @@
 
 
 <p align="center">
-  <a href="#key-features">Key Features</a>•
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#run-locally"> Run Locally </a>•
-  <a href="#run-tests-locally"> Run test locally </a>•
-  <a href="#download">Download</a> •
-  <a href="#emailware">Emilware</a>•
-  <a href="#license">License</a>
+  <a href="#key-key-features">Key Features</a>•
+  <a href="#smile-how-to-use">How To Use</a> •
+  <a href="#runner-run-locally"> Run Locally </a>•
+  <a href="#cop-run-tests-locally"> Run test locally </a>•
+  <a href="#arrow_down-download">Download</a> •
+  <a href="#lock-google-authentication">Google authentication</a> •
+  <a href="#email-emailware-da-cambiare">Emilware</a>•
+  <a href="#mortar_board-license">License</a>
 </p>
 
 ![Video non supportato](./frontend/static/The-Final-Testination-Video.gif)
@@ -23,13 +24,13 @@
 
 - **Login with Google**: Easily sign in using your Google account.
 - **Email registration**: Register with a personal email address for access.
-- **Level system**: 4 pre-existing levels with the option to add new ones.
+- **Level system**: 3 pre-existing levels with the option to add new ones.
 - **Hints feature**: Get helpful hints to overcome challenges and progress.
 - **User profile**: Track your completed levels and time spent.
 - **Leaderboard**: Compare your performance with others on the leaderboard.
 Support
 
-## :smile: How To Use
+## :smile: How To Use (git e node da cambiare ?)
 
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
@@ -102,6 +103,28 @@ To run queries as strings against the local db, run:
 psql -U postgres -p 5432 -h 127.0.0.1 -d final_testination -c "[query]"
 ```
 ## :arrow_down: Download
+mamamamamammamamaamamamamamamamamamamamam
+
+## :lock: Google authentication
+To integrate Google authentication into your application, follow these steps:
+
+### 1. Create OAuth Consent Screen
+The OAuth consent screen is where users are prompted to grant access to their Google account information. This is where you define how your application will appear to users. You need to configure:
+
+- **Application Name**
+- **Authorized Domains**
+- **Scopes** (permissions requested by the app)
+- **Branding Information** (logo, application homepage)
+
+### 2. Create Credentials
+Once the OAuth consent screen is set up, you need to create credentials that will allow your app to authenticate users via Google:
+
+- **Select OAuth 2.0 Client ID** as the credential type.
+- Set the redirect URI for your application.
+- Download the credentials file containing the client ID and client secret.
+
+For further setup, visit the [Google Cloud Console](https://console.cloud.google.com).
+
 
 
 ## :email: Emailware (da cambiare)
