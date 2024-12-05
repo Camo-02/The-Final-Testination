@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="./frontend/static/logo.png" alt="The Final Testination" width="800" height="350">
+  <img src="./frontend/static/logo.svg" alt="The Final Testination" width="400" height="200">
 </h1>
 
 <h4 align="center">"The Final Testination" is an open-source gamified web application created by <a href="https://www.unige.it">Unige</a> students.</h4>
@@ -124,7 +124,8 @@ Once the OAuth consent screen is set up, you need to create credentials that wil
 
 For further setup, visit the [Google Cloud Console](https://console.cloud.google.com).
 
-
+### 3. Set Credentials in the frontend
+Now you need to go to frontend/src/routes/login/+page.svelte and replace "Insert_Your_Client_ID" with the client id you obtained from the Google Console.
 
 ## :email: Emailware (da cambiare)
 
