@@ -127,15 +127,9 @@ For further setup, visit the [Google Cloud Console](https://console.cloud.google
 ### 3. Set Credentials in the frontend
 Now you need to go to frontend/src/routes/login/+page.svelte and replace "Insert_Your_Client_ID" with the client id you obtained from the Google Console.
 
-## :email: Emailware (da cambiare)
-
-Markdownify is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this app or it has helped you in any way, I'd like you send me an email at <bullredeyes@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
+## :email: Emailware 
 
 ## :crown: Credits
-
-This software uses the following open source packages:
-
-- [Electron](http://electron.atom.io/)
 
 ## :mortar_board: License
 
