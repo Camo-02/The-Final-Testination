@@ -10,7 +10,7 @@
   <a href="#key-key-features">Key Features</a>•
   <a href="#smile-set-up">Set up</a> •
   <a href="#runner-run-locally"> Run Locally </a>•
-  <a href="#cop-run-tests-locally"> Run test locally </a>•
+  <a href="#cop-tests-locally"> Test locally </a>•
   <a href="#arrow_down-download">Download</a> •
   <a href="#lock-google-authentication">Google authentication</a> •
   <a href="#email-emailware-da-cambiare">Emilware</a>•
@@ -66,7 +66,7 @@ This command will stop the database
 docker compose -f development.yml down
 ```
 
-## :cop: Run tests locally
+## :cop: Tests locally
 
 The following commands assume you are currently in the root of the project:
 
