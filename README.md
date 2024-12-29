@@ -102,7 +102,6 @@ To run queries as strings against the local db, run:
 psql -U postgres -p 5432 -h 127.0.0.1 -d final_testination -c "[query]"
 ```
 ## :arrow_down: Download
-mamamamamammamamaamamamamamamamamamamamam
 
 ## :lock: Google authentication
 To integrate Google authentication into your application, follow these steps:
