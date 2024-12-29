@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="#key-key-features">Key Features</a>•
-  <a href="#smile-how-to-use">How To Use</a> •
+  <a href="#smile-set-up">Set up</a> •
   <a href="#runner-run-locally"> Run Locally </a>•
   <a href="#cop-run-tests-locally"> Run test locally </a>•
   <a href="#arrow_down-download">Download</a> •
