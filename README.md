@@ -29,9 +29,9 @@
 - **User profile**: Track your completed levels and time spent.
 - **Leaderboard**: Compare your performance with others on the leaderboard.
 
-## :smile: How To Use (git e node da cambiare ?)
+## :smile: Set Up
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [sveltejs/kit](https://www.npmjs.com/package/@sveltejs/kit) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com) and [sveltejs/kit](https://www.npmjs.com/package/@sveltejs/kit) which comes with [npm](http://npmjs.com). From your command line:
 
 ```bash
 # Clone this repository
