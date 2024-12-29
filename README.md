@@ -31,7 +31,7 @@
 
 ## :smile: How To Use (git e node da cambiare ?)
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com) and [sveltejs/kit](https://www.npmjs.com/package/@sveltejs/kit) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
@@ -39,6 +39,9 @@ $ git clone https://github.com/Camo-02/The-Final-Testination
 
 # Go into the repository
 $ cd The-Final-Testination
+
+# Install sveltejs/kit before running the front end
+$ npm i @sveltejs/kit
 ```
 
 ## :runner: Run locally
