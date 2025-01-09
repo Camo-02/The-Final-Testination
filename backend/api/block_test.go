@@ -199,7 +199,7 @@ func TestCheckAnswer(t *testing.T) {
 	SetUpGameRoutes(&gameGroup, db)
 
 	for _, test := range tests {
-		loginResp := utils.MockLogin(t, app, "newUser", "rootroot")
+		loginResp := utils.MockLogin(t, app, "test", "rootroot")
 		cookie := utils.Filter(loginResp.Cookies(), func(c *http.Cookie) bool {
 			return c.Name == constants.AUTH_COOKIE_NAME
 		})[0].Value
