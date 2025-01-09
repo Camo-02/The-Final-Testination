@@ -199,15 +199,6 @@ func TestCheckAnswer(t *testing.T) {
 	SetUpGameRoutes(&gameGroup, db)
 
 	for _, test := range tests {
-		loginResp := utils.MockLogin(t, app, "test", "rootroot")
-		cookies := utils.Filter(loginResp.Cookies(), func(c *http.Cookie) bool {
-    			return c.Name == constants.AUTH_COOKIE_NAME
-		})
-		if len(cookies) == 0 {
-    			t.Fatalf("Authentication cookie not found in the response")
-		}
-		cookie := cookies[0].Value
-
 		// get the level to create the db entry
 		getReq := httptest.NewRequest("GET", getLevel, bytes.NewBuffer([]byte("")))
 		getReq.Header.Set("Content-Type", "application/json")
