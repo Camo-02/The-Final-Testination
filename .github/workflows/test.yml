@@ -58,7 +58,7 @@ jobs:
         run: |
           docker compose -f development.yml up -d
         env:
-          DATABASE_URL: postgres://postgres:password@localhost:5432/final_testination
+          DATABASE_URL: postgres://postgres:root@localhost:5432/final_testination
 
       - name: Setup env file
         run: mv .env.sample ./.env
