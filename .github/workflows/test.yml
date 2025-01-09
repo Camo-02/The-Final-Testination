@@ -60,6 +60,9 @@ jobs:
         env:
           DATABASE_URL: postgres://postgres:password@localhost:5432/final_testination
 
+      - name: Setup env file
+        run: mv .env.sample ./.env
+
       - name: Backend Tests
         run: |
           cd backend
