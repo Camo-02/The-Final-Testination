@@ -1,0 +1,79 @@
+name: CI Tests
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  setup-environment:
+    name: Setup Environment
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:13
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: password
+          POSTGRES_DB: final_testination
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22
+
+      - name: Set up Go
+        uses: actions/setup-go@v3
+        with:
+          go-version: 1.23
+
+      - name: Install Dependencies (Frontend)
+        run: |
+          cd frontend
+          npm install
+
+      - name: Install Dependencies (Backend)
+        run: |
+          cd backend
+          go mod tidy
+
+  run-tests:
+    name: Run Tests
+    needs: setup-environment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Start Docker Compose
+        run: |
+          docker compose -f development.yml up -d
+        env:
+          DATABASE_URL: postgres://postgres:password@localhost:5432/final_testination
+
+      - name: Backend Tests
+        run: |
+          cd backend
+          ../scripts/addenv go test ./...
+
+      - name: Frontend Build and Test
+        run: |
+          cd frontend
+          ../scripts/addenv npm run build:test
+          ../scripts/addenv npm run host
+
+      - name: Cypress Tests
+        run: |
+          cd frontend
+          ../scripts/addenv npm run cypress
+        env:
+          CYPRESS_BASE_URL: http://localhost:3000
