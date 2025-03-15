@@ -44,7 +44,7 @@ $ cd The-Final-Testination
 $ npm i @sveltejs/kit
 ```
 
-## :runner: Run locally
+## :runner: Run Locally
 A `.env` file is required in the root directory of the project. A `.env.sample` is available in the same directory with some sensible default values.
 
 ```sh
@@ -66,7 +66,7 @@ This command will stop the database
 docker compose -f development.yml down
 ```
 
-## :cop: Tests locally
+## :cop: Tests Locally
 
 The following commands assume you are currently in the root of the project:
 
@@ -106,7 +106,7 @@ psql -U postgres -p 5432 -h 127.0.0.1 -d final_testination -c "[query]"
 ```
 ## :arrow_down: Download
 
-## :lock: Google authentication
+## :lock: Google Authentication
 To integrate Google authentication into your application, follow these steps:
 
 ### 1. Create OAuth Consent Screen
