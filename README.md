@@ -10,9 +10,9 @@
   <a href="#key-key-features">Key Features</a>•
   <a href="#smile-set-up">Set up</a> •
   <a href="#runner-run-locally"> Run Locally </a>•
-  <a href="#cop-tests-locally"> Test locally </a>•
+  <a href="#cop-tests-locally"> Test Locally </a>•
   <a href="#arrow_down-download">Download</a> •
-  <a href="#lock-google-authentication">Google authentication</a> •
+  <a href="#lock-google-authentication">Google Authentication</a> •
   <a href="#email-emailware-da-cambiare">Emilware</a>•
   <a href="#mortar_board-license">License</a>
 </p>
