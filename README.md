@@ -66,7 +66,7 @@ This command will stop the database
 docker compose -f development.yml down
 ```
 
-## :cop: Tests Locally
+## :cop: Test Locally
 
 The following commands assume you are currently in the root of the project:
 
