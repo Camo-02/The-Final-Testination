@@ -127,6 +127,7 @@ Once the OAuth consent screen is set up, you need to create credentials that wil
 For further setup, visit the [Google Cloud Console](https://console.cloud.google.com).
 
 ### 3. Set Credentials in the frontend
+Use PKCE if hardcoded
 Now you need to go to frontend/src/routes/login/+page.svelte and replace "Insert_Your_Client_ID" with the client id you obtained from the Google Console.
 
 ## :email: Emailware 
